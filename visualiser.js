@@ -41,7 +41,7 @@ function main() {
       // context.strokeRect(0, 0, this.width, this.height * .10)
       context.fillRect(0, 0, this.width, this.height);
       context.beginPath();
-      context.arc(this.x, this.y, this.height / 20, 0, Math.PI * 2);
+      context.arc(this.x / 2, this.y / 2, this.height / 20, 0, Math.PI * 2);
       context.stroke();
       context.fill();
 
@@ -56,7 +56,7 @@ function main() {
       let color = "rgba(159,150,150,1)";
       // let color = 'hsl(' + i * 20 + ', 100%, 50%)'
       //  bars.push(new Bar(i * barWidth,canvas.height / 2, 1, 20, color, i))
-      bars.push(new Bar(i * barWidth, i * 4, i, i * 3, color, i));
+      bars.push(new Bar(i * barWidth, i * 6, i, i * 3, color, i));
     }
   }
   createBars();
